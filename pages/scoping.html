@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoping Complexity and Asset Categorization — C3PAO Guide</title>
+  <meta name="description" content="The five asset classes in CMMC scoping — CUI Assets, Security Protection Assets, CRMA, Specialized Assets, and Out-of-Scope systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo"><span class="shield">&#128737;</span> <a href="../index.html">C3PAO Guide</a></div>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">&#9776;</button>
+    <nav class="main-nav">
+      <a href="../index.html">Home</a>
+      <a href="foundations.html">Foundations</a>
+      <a href="regulatory.html">Regulatory</a>
+      <a href="authorization.html">Authorization</a>
+      <a href="iso-17020.html">ISO 17020</a>
+      <a href="cap-lifecycle.html">CAP Lifecycle</a>
+      <a href="scoping.html" class="active">Scoping</a>
+      <a href="financial.html">Financial</a>
+      <a href="selection.html">Selection</a>
+      <a href="pitfalls.html">Pitfalls</a>
+      <a href="post-certification.html">Post-Cert</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-num">Chapter 6</div>
+  <h1>Scoping Complexity and Asset Categorization</h1>
+</section>
+
+<div class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; Scoping</div>
+
+<div class="content">
+  <p>A common point of failure in C3PAO assessments is the misidentification of the assessment boundary. Scoping is not merely about identifying where the CUI is stored — it involves a complex analysis of every asset that can influence the security of that information.</p>
+
+  <h2>The Five Asset Classes</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Asset Class</th><th>Description</th><th>Assessment Scope</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>CUI Assets</strong></td><td>Systems that process, store, or transmit CUI</td><td>Full — all 110 CMMC requirements</td></tr>
+        <tr><td><strong>Security Protection Assets</strong></td><td>Tools and services that protect the environment (firewalls, SIEMs, managed security)</td><td>Full assessment</td></tr>
+        <tr><td><strong>Contractor Risk Managed Assets (CRMA)</strong></td><td>Systems that can, but are not intended to, process CUI</td><td>Limited — must be documented in SSP</td></tr>
+        <tr><td><strong>Specialized Assets</strong></td><td>IoT devices, operational technology (OT), test equipment</td><td>In scope but assessed against limited criteria</td></tr>
+        <tr><td><strong>Out-of-Scope Assets</strong></td><td>Systems physically and logically isolated from CUI environment</td><td>Not assessed</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>The C3PAO's Role in Scoping</h2>
+  <p>The C3PAO's role during the scoping call is to <strong>challenge the OSC's boundary definitions</strong>. If an organization fails to account for a remote work access point or a third-party cloud connection, the C3PAO will flag this as a risk to the assessment's integrity.</p>
+
+  <div class="callout">
+    <strong>CUI Enclave Strategy:</strong> Effective scoping often leads to the creation of a "CUI Enclave" — a segregated part of the network that limits the assessment footprint and, consequently, reduces the C3PAO's fees and the OSC's implementation burden.
+  </div>
+
+  <h2>Common Scoping Mistakes</h2>
+  <ul>
+    <li><strong>Overlooking remote access:</strong> VPN endpoints, remote desktop solutions, and BYOD policies can expand the boundary significantly</li>
+    <li><strong>Ignoring cloud connections:</strong> SaaS tools and cloud storage that touch CUI must be included</li>
+    <li><strong>Misclassifying security tools:</strong> Firewalls, SIEM platforms, and MDR services are Security Protection Assets and fully in scope</li>
+    <li><strong>Forgetting shared infrastructure:</strong> Printers, scanners, and shared drives that may incidentally contact CUI</li>
+  </ul>
+
+  <div class="references">
+    <h3>References</h3>
+    <ol>
+      <li><a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/09/cmmc-final-rule-key-takeaways-for-defense-contractors">CMMC Final Rule: Key Takeaways — Arnold & Porter</a></li>
+      <li><a href="https://drata.com/grc-central/cmmc-assessment-process">CMMC Assessment Process — Drata</a></li>
+      <li><a href="https://www.strikegraph.com/blog/cmmc-2-level-2-requirements">CMMC 2.0 Level 2 Simplified — StrikeGraph</a></li>
+      <li><a href="https://compassmsp.com/resources/the-cmmc-level-2-c3pao-selection-framework">C3PAO Selection Framework — CompassMSP</a></li>
+    </ol>
+  </div>
+
+  <nav class="page-nav">
+    <a href="cap-lifecycle.html"><span class="label">Previous</span>&larr; CAP Lifecycle</a>
+    <a class="next" href="financial.html"><span class="label">Next Chapter</span>Financial Analysis &rarr;</a>
+  </nav>
+</div>
+
+<footer class="site-footer">
+  <p>The Definitive Guide to CMMC C3PAOs &mdash; An educational resource for the Defense Industrial Base.</p>
+</footer>
+
+</body>
+</html>
