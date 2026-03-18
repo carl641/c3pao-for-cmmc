@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundations of the C3PAO Role — C3PAO Guide</title>
+  <meta name="description" content="Understanding the CMMC ecosystem architecture, chain of trust, and the distinct roles of C3PAOs, RPOs, and other participants.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo"><span class="shield">&#128737;</span> <a href="../index.html">C3PAO Guide</a></div>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">&#9776;</button>
+    <nav class="main-nav">
+      <a href="../index.html">Home</a>
+      <a href="foundations.html" class="active">Foundations</a>
+      <a href="regulatory.html">Regulatory</a>
+      <a href="authorization.html">Authorization</a>
+      <a href="iso-17020.html">ISO 17020</a>
+      <a href="cap-lifecycle.html">CAP Lifecycle</a>
+      <a href="scoping.html">Scoping</a>
+      <a href="financial.html">Financial</a>
+      <a href="selection.html">Selection</a>
+      <a href="pitfalls.html">Pitfalls</a>
+      <a href="post-certification.html">Post-Cert</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-num">Chapter 1</div>
+  <h1>Foundations of the C3PAO Role and the Ecosystem</h1>
+</section>
+
+<div class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; Foundations</div>
+
+<div class="content">
+  <h2>The Chain of Trust</h2>
+  <p>The architecture of the CMMC ecosystem is designed to establish a "chain of trust" that extends from the Department of Defense to the smallest subcontractors in the supply chain. This ecosystem is governed by the <strong>CMMC Accreditation Body</strong>, now known as the <strong>Cyber AB</strong>, which serves as the sole "source of truth" for the authorization and accreditation of C3PAOs.</p>
+
+  <h2>C3PAO vs. RPO: The Grader vs. The Coach</h2>
+  <p>To understand the C3PAO, one must first distinguish its role from other ecosystem participants, particularly the <strong>Registered Provider Organization (RPO)</strong>. While an RPO acts as a consultant or "preparer" that helps an organization build its security program, the C3PAO functions as the "proctor" or "grader" that validates that implementation.</p>
+
+  <div class="callout">
+    <strong>Independence Requirement:</strong> To maintain integrity, a C3PAO is strictly prohibited from assessing any organization for which it provided significant implementation or consulting services within a specific timeframe, typically three years.
+  </div>
+
+  <h2>Why C3PAOs Are Necessary</h2>
+  <p>The necessity of the C3PAO arises from the inherent limitations of the previous self-assessment model under DFARS 252.204-7012. Historically, contractors reported their own compliance with NIST SP 800-171, often resulting in inconsistent implementation and leaving critical vulnerabilities in the defense supply chain.</p>
+  <p>The C3PAO provides an objective, expert perspective, utilizing trained assessors to verify "objective evidence" rather than relying on claims of compliance. This move toward independent verification reflects the DoD's broader strategy to institutionalize cybersecurity practices as a foundational element of contract performance, on par with cost, schedule, and technical requirements.</p>
+
+  <h2>CMMC Ecosystem Roles</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Role in Ecosystem</th><th>Primary Responsibility</th><th>Relationship to OSC</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Cyber AB</strong></td><td>Accreditation and Ecosystem Governance</td><td>Regulatory oversight of all parties</td></tr>
+        <tr><td><strong>C3PAO</strong></td><td>Independent Assessment and Result Submission</td><td>Independent Auditor (The Grader)</td></tr>
+        <tr><td><strong>RPO</strong></td><td>Consulting and Readiness Support</td><td>Implementation Consultant (The Coach)</td></tr>
+        <tr><td><strong>CCA/CCP</strong></td><td>Individual Assessment Execution</td><td>Certified Professional Staff</td></tr>
+        <tr><td><strong>CAICO</strong></td><td>Training and Certification of Individuals</td><td>Training and Examination Body</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="references">
+    <h3>References</h3>
+    <ol>
+      <li><a href="https://cyberab.org/CMMC-Ecosystem/The-Cybersecurity-Ecosystem">CMMC Community — An Ecosystem of Cybersecurity Professionals, CyberAB</a></li>
+      <li><a href="https://compassmsp.com/resources/the-cmmc-level-2-c3pao-selection-framework">The CMMC Level 2 C3PAO Selection Framework — CompassMSP</a></li>
+      <li><a href="https://www.cmmcaudit.org/what-is-a-c3pao/">What is a C3PAO? — CMMC Audit Preparation</a></li>
+    </ol>
+  </div>
+
+  <nav class="page-nav">
+    <a href="../index.html"><span class="label">Home</span> Guide Overview</a>
+    <a class="next" href="regulatory.html"><span class="label">Next Chapter</span> Regulatory Frameworks &rarr;</a>
+  </nav>
+</div>
+
+<footer class="site-footer">
+  <p>The Definitive Guide to CMMC C3PAOs &mdash; An educational resource for the Defense Industrial Base.</p>
+</footer>
+
+</body>
+</html>
